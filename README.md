@@ -60,7 +60,8 @@ The api is designed with a subroute on `/api/v1/participants/`
 Creates a Participant Entity
 
 
-```curl --location --request POST 'localhost:8080/api/v1/participant/' \
+```
+curl --location --request POST 'localhost:8080/api/v1/participant/' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "Daniel",
