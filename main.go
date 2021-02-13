@@ -16,6 +16,7 @@ func main() {
 
 	r.HandleFunc("/", home)
 	api := r.PathPrefix("/api/v1").Subrouter()
+	api.HandleFunc("/participant", getParticipants).Methods(http.MethodGet)
 	api.HandleFunc("/participant/", getParticipants).Methods(http.MethodGet)
 	api.HandleFunc("/participant/{id}", getParticipant).Methods(http.MethodGet)
 	api.HandleFunc("/participant/", createParticipant).Methods(http.MethodPost)
@@ -24,7 +25,7 @@ func main() {
 
 	server := &http.Server{
 		Handler:      r,
-		Addr:         "localhost:8080",
+		Addr:         ":8080",
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  15 * time.Second,
 	}
