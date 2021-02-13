@@ -56,7 +56,8 @@ I just mapped the attributes mentioned in the PDF plus I added the reference num
 
 The api is designed with a subroute on `/api/v1/participants/`
 
-- POST /
+- `POST /`
+
 Creates a Participant Entity
 
 
@@ -86,7 +87,7 @@ Returns
 ```
 
 
-- GET / 
+- `GET /`
 
 Returns a list of all Participants
 
@@ -110,7 +111,7 @@ Returns
 ```
 
 
-- GET/{id}
+- `GET/{id}`
 
 Returns a specific Participant by reference ID Number
 
@@ -131,7 +132,7 @@ Returns
 
 ```
 
-- PUT /{id}
+- `PUT /{id}`
 
 Updates a Participant by reference ID Number
 
@@ -160,7 +161,7 @@ Returns
 ```
 
 
-- DELETE /{id}
+- `DELETE /{id}`
 
 ```
 curl --location --request DELETE 'localhost:8080/api/v1/participant/9ff0178c-fe56-451e-a246-6752efc6b5ab'
