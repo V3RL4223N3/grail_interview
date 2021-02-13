@@ -36,7 +36,10 @@ func generateRandomReferenceNumber() string {
 	return uuid.String()
 }
 
+
 ```
+
+- I built the server from scratch, using the MUX library in go, the server / handler / middleware functions are in server.go and main.go
 
 # Data Model
 
